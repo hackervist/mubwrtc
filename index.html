@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get User MEdia WRTC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #errorMsg {
+            color: red;
+        }
+
+        .warning {
+            color: orange;
+        }
+
+        #gum-local {
+            border: dotted 1px black;
+            border-radius: 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+
+
+            <video id="gum-local" autoplay playsinline></video>
+            <br>
+            <button id="showVideo" class="btn btn-secondary">Open camera</button>
+
+
+            <div id="errorMsg"></div>
+
+            <p class="warning"><strong>Warning:</strong> if you're not using headphones, pressing play will cause
+                feedback.
+            </p>
+
+            <p>Display the video stream from <code>getUserMedia()</code> in a video element.</p>
+
+            <p>The <code>MediaStream</code> object <code>stream</code> passed to the <code>getUserMedia()</code>
+                callback is
+                in
+                global scope, so you can inspect it from the console.</p>
+
+
+        </div>
+
+        <script src="main.js"></script>
+
+    </div>
+</body>
+</body>
+
+</html>
